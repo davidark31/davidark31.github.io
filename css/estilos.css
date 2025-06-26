@@ -5,6 +5,7 @@ html{
 body{
     height: 100%;
     font-style: normal;
+    background: linear-gradient(76deg,rgba(99, 55, 36, 1) 0%, rgba(38, 19, 13, 1) 100%);
 }
 
 
@@ -20,9 +21,6 @@ a{
     color: #fff;
 }
 
-footer{
-    background: linear-gradient(76deg,rgba(99, 55, 36, 1) 0%, rgba(38, 19, 13, 1) 100%);
-}
 
 /* utilidades */
 .flex{
@@ -51,17 +49,15 @@ footer{
 }
 
 /* presentacion */
-.presentacion{
+.presentacion {
     text-align: center;
     display:block;
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background: #633724;
     height: 90%;
-    background: linear-gradient(76deg,rgba(99, 55, 36, 1) 0%, rgba(38, 19, 13, 1) 100%);
-    color: #D2D7D9;
+    color: #D2D7D9; 
 
 }
 /* texto presentacion */
@@ -79,4 +75,10 @@ footer{
     align-self: center;
     border-radius:50%;
     width:15%;
+}
+
+/* seccion conocimientos */
+.sectionConocimientos{
+    color: #fff;
+    text-align: center;
 }
