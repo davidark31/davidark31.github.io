@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
-    <script type="module" src="js/main.js"></script>
+    
 </head>
 <body>
     <header>
@@ -37,11 +37,20 @@
 
     <!-- Conocimientos -->
     <section class="sectionConocimientos">
-        <h3 id="conocimientos">CONOCIMIENTOS</h3>
-        <div id="divConocimientos">
-            <div class="frontend">FRONTEND</div>
-            <div class="backend">BACKEND</div>
-            <div class="other">OTROS</div>
+        <h2 id="conocimientos">Conocimientos</h2>
+        <div id="divConocimientos" class="visible">
+            <div class="grupo-skills">
+                <h4>Frontend</h4>
+                <div id="frontend"></div>
+            </div>
+            <div class="grupo-skills">
+                <h4>Backend</h4>
+                <div id="backend"></div>
+            </div>
+            <div class="grupo-skills">
+                <h4>Otros</h4>
+                <div id="others"></div>
+            </div>
         </div>
     </section>
 
@@ -54,6 +63,6 @@
     <footer id="contactos">
         <a target="_blank" href="https://www.linkedin.com/in/david-rivas-55180656/"><img src="img/linkedin.png" alt="linkedin"></a>
     </footer>
-
+    <script type="module" src="js/main.js"></script>
 </body> 
 </html> 

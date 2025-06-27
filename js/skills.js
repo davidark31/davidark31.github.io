@@ -2,7 +2,7 @@ export const frontendSkills = [
     {
     nombre: "HTML5",
     imagen: "../img/html5.png",
-    estrellas: 5
+    estrellas: 4
     },
     {
     nombre: "CSS3",
@@ -34,12 +34,12 @@ export const frontendSkills = [
 
 export const others = [
     {
-    nombre: "git",
+    nombre: "GIT",
     imagen: "../img/git.png",
-    estrellas: 3
+    estrellas: 2
     },
     {
-    nombre: "ingles",
+    nombre: "INGLÉS",
     imagen: "../img/eng.png",
     estrellas: 4
     }]
