@@ -13,14 +13,14 @@ function crearSkill(skill) {
     const div = document.createElement("div");
     div.classList.add("icono"); 
 
+    const nombre = document.createElement("span");
+    nombre.classList.add("skill");
+    nombre.textContent = skill.nombre;
+
     const img = document.createElement("img");
     img.src = skill.imagen;
     img.alt = skill.nombre;
     img.title = skill.nombre;
-
-    const nombre = document.createElement("span");
-    nombre.classList.add("skill");
-    nombre.textContent = skill.nombre;
 
     const estrellas = document.createElement("div");
     estrellas.classList.add("estrellas");
@@ -39,12 +39,13 @@ function crearSkill(skill) {
     return div;
 }
 
+// agrega el contenido al html
 function mostrarSkills(skills, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
     contenedor.innerHTML = "";
     skills.forEach(skill => {
-    const elemento = crearSkill(skill);
-    contenedor.appendChild(elemento);
+        const elemento = crearSkill(skill);
+        contenedor.appendChild(elemento);
     });
 }
 

@@ -14,6 +14,7 @@ h2{
 }
 
 h3{
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     cursor: pointer;
     user-select: none;
@@ -69,7 +70,11 @@ a{
 }
 /* texto presentacion */
 .texto_presentacion{
-    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     padding-top: 1rem;
     margin: auto;
     width: 50%;
@@ -81,19 +86,28 @@ a{
     margin-top: 1rem;
     align-self: center;
     border-radius:50%;
-    width:15%;
+    width:20%;
 }
 
 /* seccion conocimientos */
 .sectionConocimientos{
+    margin: auto;
+    width: 95%;
     color: #fff;
     text-align: center;
+    background: #26130D ;
 }
+
+#conocimientos{
+    padding-top: 2rem;
+}
+
 #divConocimientos {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
+    padding:40px;
     transition: opacity 2s ease;
     opacity: 1;
     flex-wrap: wrap;
@@ -131,7 +145,6 @@ a{
 .icono img {
     width: 80px;
     height: 80px;
-
     object-fit: contain;
 }
 
@@ -153,13 +166,87 @@ a{
     font-size: 14px;
 }
 
+/* Seccion footer */
+footer{
+    padding: 2rem 0;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.links_contactos{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    margin: 2rem 0;
+}
+
+.subsection_links_contactos a img{
+    width: 40px;
+    display: flexbox;
+}
+
+
+
 /* Responsive para móviles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+    h1{
+        display: none;
+    }
+
+    #nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* muy importante para que abarque todo el ancho */
+        z-index: 1000;
+    }
+
+    .presentacion{
+        padding-top: 5rem;
+    }
     #divConocimientos {
         flex-direction: column;
+
+    }
+
+    .imagen_perfil{
+        margin: auto;
+        margin-top: 1rem;
+        align-self: center;
+        border-radius:50%;
+        width:60%;
+    }
+
+    .texto_presentacion{
+        width: 80%;
+    }
+
+    .texto_presentacion2{
+        display: none;
     }
 
     .grupo-skills {
         flex: 1 1 100%;
     }
+
+    .links_contactos{
+        padding-top: 1rem;
+        text-align: center;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .subsection_links_contactos p{
+        padding-bottom: 1rem;
+    }
+
 }
