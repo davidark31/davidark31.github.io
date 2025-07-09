@@ -1,4 +1,9 @@
+
 export const frontendSkills = [
+    {
+        imagen: "../img/html5.png",
+        estrellas: 1
+    },
     {
         nombre: "HTML5",
         imagen: "../img/html5.png",

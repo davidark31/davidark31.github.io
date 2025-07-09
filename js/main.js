@@ -10,6 +10,11 @@ h3Conocimiento.addEventListener("click", () => {
 
 
 function crearSkill(skill) {
+
+    if (!skill || typeof skill !== "object" || !skill.nombre || !skill.imagen || typeof skill.estrellas !== "number") {
+        throw new Error("Test Data corrupta")
+    }
+
     const div = document.createElement("div");
     div.classList.add("icono"); 
 
@@ -44,12 +49,18 @@ function mostrarSkills(skills, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
     contenedor.innerHTML = "";
     skills.forEach(skill => {
+
+    try {
         const elemento = crearSkill(skill);
         contenedor.appendChild(elemento);
+    } catch (error) {
+        console.error(error);
+    }
     });
 }
 
 // mostrar
+//mostrarSkills(dataCorrupta, "dataCorrupta");
 mostrarSkills(frontendSkills, "frontend");
 mostrarSkills(backendSkills, "backend");
 mostrarSkills(others, "others");
